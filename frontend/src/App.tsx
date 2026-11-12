@@ -15,6 +15,7 @@ import DimensionView from './views/dimension'
 import FilterView from './views/filter'
 import ScheduleView from './views/schedule'
 import ExportView from './views/export'
+import ExportDetailView from './views/export/detail'
 import CacheView from './views/cache'
 import ModelView from './views/model'
 import LogView from './views/log'
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="/filter" element={<FilterView />} />
           <Route path="/schedule" element={<ScheduleView />} />
           <Route path="/export" element={<ExportView />} />
+          <Route path="/export/:entryId" element={<ExportDetailView />} />
           <Route path="/cache" element={<CacheView />} />
           <Route path="/model" element={<ModelView />} />
           <Route path="/log" element={<LogView />} />
